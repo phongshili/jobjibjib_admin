@@ -1,0 +1,156 @@
+$font: "Noto Sans Lao", "sans-serif";
+@import "./color";
+@import "./_table";
+
+body,
+html {
+  height: 100%;
+  font-family: $font;
+  margin: 0;
+  .page {
+    padding-bottom: 20px;
+    margin: 0 20px 0 20px;
+    button{
+      font-family: $font;
+      width: 100px;
+    }
+    select{
+      font-family: $font;
+    }
+    .page-header {
+      display: flex;
+
+      margin: 0 20px 0 0;
+      h3{
+        margin-bottom: auto;
+        margin-top: auto;
+      }
+      .input-group {
+        margin-left: auto;
+        max-width: 50%;
+        position: relative;
+        i{
+          position: absolute;
+          right: 10px;
+          top: 30%;
+          color: #cccccc;
+        }
+      }
+      button {
+        margin-left: 10px;
+        &.btn-left{
+          margin-left: auto;
+        }
+      }
+    }
+  
+    .box {
+      margin-top: 10px;
+      .manage-list{
+        display: flex;
+        p{
+          margin-left: 10px;
+          cursor: pointer;
+        }
+      }
+      .page-content {
+        width: 100%;
+        height: 100%;
+        border: 1px solid $tb-color;
+       
+      }
+      .btn-group{
+        padding-left: 270px;
+        button{
+          margin-right: 5px;
+        }
+      }
+      .input-text {
+        padding-left: 80px;
+        display: flex;
+        padding-bottom: 10px;
+        align-items: center;
+        
+        
+        .img-container{
+         max-width: 100%;
+         width: 50%;
+          border: 1px solid red;
+          display: grid;
+          justify-content: center;
+          &.isProfile{
+            width: 160px;
+            height: 170px;
+          }
+          i{
+            text-align: center;
+          }
+        }
+        .radio-content {
+          width: 40%;
+          display: flex;
+        }
+
+        label {
+          justify-content: flex-end;
+          display: flex;
+          min-width: 190px;
+          padding-right: 20px;
+
+          p {
+            padding-left: 5px;
+            color: $alert-color;
+            
+          }
+          &.not-req{
+            padding-right: 32px;
+          }
+        }
+        .input-area{
+          max-width: 100%;
+          min-width: 50%;
+          display: flex;
+          .is-option{
+            justify-content: flex-start;
+            min-width: 65px;
+            input{
+              margin: auto 5px auto 0;
+            }
+          }
+          .select{
+            width: 100%;
+            
+            select{
+              width: 100%;
+            }
+          }
+          .area-content{
+            width: 100%;
+            padding-right: 5px;
+            input{
+              width: 100%;
+            }
+            .select{
+              width: 100%;
+            select{
+              width: 100%;
+            }
+          }
+          }
+        }
+    
+      }
+      .insert-edit {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
+        input {
+          max-width: 80%;
+        }
+        button {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}

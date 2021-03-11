@@ -1,0 +1,100 @@
+@import "./color";
+#mytable {
+  td {
+    border: none;
+  }
+  thead {
+    tr {
+      th {
+        border-bottom: 1.5px solid $tb-color;
+        vertical-align: middle;
+        &.is-xxs {
+          width: 8%;
+        }
+        &.is-xs {
+          width: 10%;
+        }
+        &.is-sm {
+          width: 15%;
+        }
+        &.is-md {
+          width: 20%;
+        }
+        &.is-lg {
+          width: 30%;
+        }
+        &.is-right {
+          text-align: right;
+        }
+        &.is-center {
+          text-align: center;
+        }
+      }
+    }
+  } //thead
+  tbody {
+    tr {
+      // cursor: pointer;
+      &:hover {
+        background-color: $tb-hover-color;
+      }
+     
+      .option {
+        span{
+          margin-left: 10px;
+        }
+        .edit {
+          color: $edit-color;
+        }
+        .del {
+          color: $alert-color;
+        }
+        i {
+          margin: 0 10px;
+        }
+      }
+
+      td {
+        border-width: 0;
+        border-top: 1px solid $tb-color;
+        vertical-align: middle;
+        .status{
+          background: $tb-status-color;
+          width: 90px;
+          margin-left: auto;
+          margin-right: auto;
+          border-radius: 5px;
+          
+        }
+        &.is-right {
+          text-align: right;
+        }
+        &.is-center {
+          text-align: center;
+        }
+        span{
+          cursor: pointer;
+        }
+        .tb-img {
+          width: 140px;
+          height: 80px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          img {
+            height: auto;
+            display: block;
+          }
+        } // .product-img
+
+        ._image{
+          display: block;
+          width: 60px;
+          height: 60px;
+          background-position: center;
+          background-size: cover;
+        } //_image
+      }
+    }
+  } //tbody
+}
